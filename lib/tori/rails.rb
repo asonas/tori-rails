@@ -1,7 +1,8 @@
+require 'tori'
+require 'tori/rails/callback'
+require 'tori/rails/define'
+require 'tori/rails/error'
+require 'tori/rails/registerable'
 require "tori/rails/version"
 
-module Tori
-  module Rails
-    # Your code goes here...
-  end
-end
+::ActiveRecord::Base.extend(Tori::Define)
